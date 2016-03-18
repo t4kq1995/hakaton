@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+  	"name": "VKedition",
+  	"version": "1.0",
+  	"content_scripts": [
+    {
+      	"matches": [ "*://*/*" ],
+      	"js": [ "scripts/content.js" , "scripts/vk_inject.js", "scripts/jquery-1.10.2.js", "scripts/vk_cs.js"],
+      	"css": ["css/vk_styles.css"]
+    }
+  	],
+  	"background": {
+    	"scripts": ["scripts/background.js"]
+  	},
+  	"permissions": [
+    	"http://vk.com/*",
+    	"https://*.google.com/*",
+    	"http://shato.zp.ua/*",
+    	"tabs"
+  	],
+  	"content_security_policy": "script-src 'self' 'unsafe-eval'  https://www.google.com; object-src 'self'",
+    "browser_action": {
+        "default_title": "VKedition",
+        "default_icon": "img/icon.png",
+        "default_popup": "popup.html"
+    }
+}

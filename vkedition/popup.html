@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <section id="main" class ="wrapper">
+            <!--меню-->
+            <nav class = "navbar navbar-default menu">
+                <img src="img/icon.png" width="50" height="50" class="img-circle">
+                <div class="textMenu">
+                    <h4 id="title"></h4>
+                </div>
+
+                <div class="container-fluid pull-right">
+                  <ul class="nav ">
+                    <li class="select"><a href="#">Рекомендации</a></li>
+                    <li><a href="translate.html">Переводчик</a></li>
+                  </ul>
+                </div>
+                <section class="recomend">
+                    <span id="selectText"><a href="#">Фильмы</a></span>
+                    <span><a href="music.html">Музыка</a></span>
+                </section>
+            </nav>
+        </section>
+
+        <!--блок ошибки-->
+        <section id="error" class ="wrapper main">
+            <p><img src="img/error.png" height="190" width="190"></p>
+            <p>Ошибка!<p>
+            <span></span>
+        </section>
+        <!--результаты поиска-->
+        <div id="film"></div>
+
+    </body>
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript" src="scripts/popup.js"></script>
+</html>

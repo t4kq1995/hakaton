@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e2e6ef;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.wrapper{
+    margin: 0;
+    padding: 0;
+    height: 455px;
+    width: 600px;
+}
+.wrapper-tr{
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: 600px;
+}
+.menu{
+    padding: 0;
+    background-color: #5B7FA6;
+}
+.menu img{
+    float: left;
+}
+.textMenu{
+    display: inline-block;
+    margin: 7px 0 0 10px;
+    float: left;
+    color: #c7d9ec;
+}
+li{
+    display: block;
+    margin-top: -7px;
+    float: left;
+}
+.select{
+  text-decoration: none;
+  background-color: #2B587A;
+}
+/*film and music*/
+.recomend{
+    margin-top:50px;
+    background-color: #2f658e;
+    padding: 5px 60px;
+}
+.recomend span{
+    margin-right: 30px;
+}
+.recomend a{
+   font-size: 16px;
+   text-decoration: none;
+   color:#c7d9ec;
+   -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.recomend a:hover{
+    color:#a1a1a2;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+#selectText a{
+    color:#8398d4;
+}
+.bottomMenu{
+    margin-bottom: 5px;
+}
+.recom{
+    margin-top:50px;
+    background-color: #2f658e;
+    padding: 5px 60px;
+    display: none;
+}
+.form{
+    margin-top: 25px;
+}
+/*for error*/
+#error {
+    display: none;
+}
+.main{
+    background-color: #5B7FA6;
+    padding-top:70px;
+}
+.main p{
+    font-size: 18px;
+    text-align: center;
+    color: #f6f7fa;
+}
+
+/* google api */
+#result_search {
+    display: none;
+}
+
+#film, #music{
+    margin: -370px 0 10px 0;
+}
+#film img{
+    margin: 5px 10px 5px 5px;
+}
+#film a, #music a{
+    text-decoration: none;
+}
+#film div, #music div{
+    -webkit-transition: all ease-out 0.3s;
+    transition: all ease-out 0.3s;
+    background-color: #bdcae9;
+    margin: 5px 0 0 5px;
+    font-size: 18px;
+    color:#2B587A;
+}
+#film div:hover, #music div:hover{
+    display:block;
+    box-shadow: 0 0 10px #52638b;
+    background-color: #8798c2;
+    color:#f6f7fa;
+}
+#film div:hover a, #music div:hover a{
+    color:#f6f7fa;
+}
+#film div.error_sorry, #music div.error_sorry {
+    background-color: #e2e6ef;
+    color: #2B587A;
+}

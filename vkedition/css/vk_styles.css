@@ -1,0 +1,12 @@
+.downloadLink {
+	float: right;
+	cursor: copy;
+	border: 1px dotted #CED8DB;
+	border-radius: 2px;
+	padding: 0 4px;
+}
+
+.downloadLink:hover {
+	background-color: #d0e6ff;
+	border-color: #9DA5AE;
+}
